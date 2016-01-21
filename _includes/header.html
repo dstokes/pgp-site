@@ -1,0 +1,19 @@
+<header class="site-header">
+  {% assign curr = page.url | downcase %}
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">PGP</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li {% if curr == "/" %}class="active"{% endif %}><a href="/">Wat?</a></li>
+          <li {% if curr == "/setup" %}class="active"{% endif %}><a href="/setup">Setup</a></li>
+          <!--<li {% if curr == "/decrypt" %}class="active"{% endif %}><a href="/decrypt">Decrypt</a></li>-->
+          <!--<li {% if curr == "/encrypt" %}class="active"{% endif %}><a href="/encrypt">Encrypt</a></li>-->
+          <!--<li {% if curr == "/keys" %}class="active"{% endif %}><a href="/keys">Keys</a></li>-->
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+</header>
