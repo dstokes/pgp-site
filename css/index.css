@@ -13,6 +13,29 @@ nav.sidebar {
   margin-top: 30px;
 }
 
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+}
+
+.control-group {
+  padding-bottom: 6px;
+}
+
+.pgp-header {
+  color: white;
+  background-color: #258AD2;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.pgp-header p {
+  color: #D5E9F7;
+  font-size: 20px;
+  font-weight: 200;
+  margin-right: 300px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

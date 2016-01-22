@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class="col-md-9" role="main">
-    {{ content }}
-  </div>
-  <div class="col-md-3" role="complimentary">
-    <nav class="sidebar">
-      <ul class="nav">
-        {% for section in page.sections %}
-        <li><a href="#{{ section }}">{{ section | capitalize }}</a></li>
-        {% endfor %}
-      <ul>
-    </nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9" role="main">
+      {{ content }}
+    </div>
+    <div class="col-md-3" role="complimentary">
+      <nav class="sidebar">
+        <ul class="nav">
+          {% for section in page.sections %}
+          <li><a href="#{{ section }}">{{ section | capitalize }}</a></li>
+          {% endfor %}
+        <ul>
+      </nav>
+    </div>
   </div>
 </div>
