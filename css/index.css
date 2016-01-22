@@ -1,12 +1,16 @@
 body {
   font-size: 16px;
   background-color: white;
-  padding: 0px;
-  margin: 0px;
 }
-
 body a:hover {
   text-decoration: none;
+}
+
+header.navbar {
+  margin-bottom: 0px;
+}
+header.navbar > .container {
+  padding-right: 100px;
 }
 
 nav.sidebar {
@@ -16,14 +20,8 @@ nav.sidebar .nav li a {
   padding: 4px 20px;
 }
 
-.navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 0px;
-}
-
-.control-group {
-  padding-bottom: 6px;
+.navbar-bottom {
+  margin: 0;
 }
 
 .pgp-header {
@@ -37,44 +35,4 @@ nav.sidebar .nav li a {
   font-size: 20px;
   font-weight: 200;
   margin-right: 300px;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body > .container {
-  padding: 60px 15px 0;
-}
-.container .text-muted {
-  margin: 20px 0;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
 }
