@@ -6,63 +6,51 @@ layout: default
     <h1>What the F%$^ is PGP?</h1>
     <p>
       Pretty Good Privacy (PGP) is a computer program and standard (OpenPGP)
-      for encrypting and decrypting data.
+      for encrypting, decrypting and signing data.
     </p>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
 
     <div class="control-group">
-      <h2>Why does my colleague / friend / relative keep bothering me about it?</h2>
+      <h2>What is a public key? Do I have one?</h2>
       <p>
-        Because they are a hero of privacy.
+        A PGP key pair is composed of a public key you distribute to the
+        world, and a private key you keep secret. Key pairs have to be
+        generated manually so if you're unfamiliar with the concept, you
+        probably don't have a public key.
       </p>
+      <p>
+        You can learn more about generating a key in the <a href="/setup">Setup Guide</a>.
     </div>
 
     <div class="control-group">
-      <h2>How do I decrypt this message?</h2>
-      <p>
-        If you're not sure what a PGP encrypted message looks like
-        <a href="#encrypted-message-example" data-toggle="collapse" aria-expanded="false" aria-controls="encrypted-message-example">here's an example</a>.
-      </p>
-      <div class="collapse" id="encrypted-message-example">
-        <pre>
------BEGIN PGP MESSAGE-----
+      <h2>How do I decrypt a message?</h2>
+      <p>A standard PGP encrypted message looks something like this:</p>
+<pre>-----BEGIN PGP MESSAGE-----
 Version: GnuPG v2
 
-jA0ECQMCpaoXuEY+v7Hj0joBmBTaMAifhgCkuyaXnOtquT+vcGlleO+BTlzff6If
-p7JuoWzpbcgSuhDiDKgZN5FOWqHwTJC829jj
-=FeY3
+jA0ECQMCjjUDHDqNrcjj0koBpnxch3LKE+HB8JytBMBYcMYE/sD8xnir6Tdk/EqK
+AS9opHgGOgGJlks7GGcvGAC6Aas0jf39QF040fRAc9JurrfWPY5VmlWzDg==
+=p5Qo
 -----END PGP MESSAGE-----</pre>
-      </div>
       <p>
         This simplest way to decrypt a PGP message is to use the
         <a href="https://www.gnu.org/home.en.html">GNU</a> implementation of PGP,
         <a href="https://www.gnupg.org/">GnuPG</a>.
       </p>
-      <pre>gpg -d /path/to/message</pre>
-    </div>
-
-    <div class="control-group">
-      <h2>How do I encrypt a message?</h2>
-      <p>
-        There are two way to encrypt messages. The first and arguably most
-        secure is to use your recipients public key. Once you've acquired
-        the public key of the person you want to communicate with, you can
-        encrypt your message with the following command:
-        <pre>gpg -aer <i>public_key_id</i> /path/to/message</pre>
-      </p>
+      <pre>$ gpg --decrypt /path/to/message</pre>
+      <p>You can find GnuPG installation instructions in the <a href="/setup">Setup Guide</a>.</p>
     </div>
 
     <div class="control-group">
       <h2>This is the best thing since RSA! Where can I find more information?</h2>
-      <p>
-        Check the navbar along the top of the page or any of these fine sources:
-        <ul>
-          <li><a href="https://www.gnupg.org/">GnuPG Homepage</a></li>
-        </ul>
-      </p>
+      <p>Check the navbar along the top of the page or any of these fine sources:</p>
+      <ul>
+        <li><a href="https://www.gnupg.org/">GnuPG Homepage</a></li>
+      </ul>
     </div>
 
   </div>
