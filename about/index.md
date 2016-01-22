@@ -18,4 +18,4 @@ Feel free to try out your new found PGP skills on <a target="_blank" href="https
 ## Contributing
 This entire site is currently hosted on Github Pages.
 
-<a target="_blank" href="https://github.com/dstokes/pgp-site">Pull-requests</a> welcome!
+<a target="_blank" href="https://github.com/dstokes/pgp-site">Pull requests</a> welcome!
