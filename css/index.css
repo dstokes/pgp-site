@@ -10,7 +10,10 @@ body a:hover {
 }
 
 nav.sidebar {
-  margin-top: 30px;
+  margin-top: 40px;
+}
+nav.sidebar .nav li a {
+  padding: 4px 20px;
 }
 
 .navbar {
