@@ -12,23 +12,22 @@ layout: default
 </div>
 
 <div class="container">
-  <div class="row">
 
-    <div class="control-group">
-      <h2>What is a public key? Do I have one?</h2>
-      <p>
-        A PGP key pair is composed of a public key you distribute to the
-        world, and a private key you keep secret. Key pairs have to be
-        generated manually so if you're unfamiliar with the concept, you
-        probably don't have a public key.
-      </p>
-      <p>
-        You can learn more about generating a key in the <a href="/setup">Setup Guide</a>.
-    </div>
+  <div class="control-group">
+    <h2>What is a public key? Do I have one?</h2>
+    <p>
+      A PGP key pair is composed of a public key you distribute to the
+      world, and a private key you keep secret. Key pairs have to be
+      generated manually so if you're unfamiliar with the concept, you
+      probably don't have a public key.
+    </p>
+    <p>
+      You can learn more about generating a key in the <a href="/setup">Setup Guide</a>.
+  </div>
 
-    <div class="control-group">
-      <h2>How do I decrypt a message?</h2>
-      <p>A standard PGP encrypted message looks something like this:</p>
+  <div class="control-group">
+    <h2>How do I decrypt a message?</h2>
+    <p>A standard PGP encrypted message looks something like this:</p>
 <pre>-----BEGIN PGP MESSAGE-----
 Version: GnuPG v2
 
@@ -36,22 +35,21 @@ jA0ECQMCjjUDHDqNrcjj0koBpnxch3LKE+HB8JytBMBYcMYE/sD8xnir6Tdk/EqK
 AS9opHgGOgGJlks7GGcvGAC6Aas0jf39QF040fRAc9JurrfWPY5VmlWzDg==
 =p5Qo
 -----END PGP MESSAGE-----</pre>
-      <p>
-        This simplest way to decrypt a PGP message is to use the
-        <a href="https://www.gnu.org/home.en.html">GNU</a> implementation of PGP,
-        <a href="https://www.gnupg.org/">GnuPG</a>.
-      </p>
-      <pre>$ gpg --decrypt /path/to/message</pre>
-      <p>You can find GnuPG installation instructions in the <a href="/setup">Setup Guide</a>.</p>
-    </div>
-
-    <div class="control-group">
-      <h2>This is the best thing since RSA! Where can I find more information?</h2>
-      <p>Check the navbar along the top of the page or any of these fine sources:</p>
-      <ul>
-        <li><a href="https://www.gnupg.org/">GnuPG Homepage</a></li>
-      </ul>
-    </div>
-
+    <p>
+      This simplest way to decrypt a PGP message is to use the
+      <a href="https://www.gnu.org/home.en.html">GNU</a> implementation of PGP,
+      <a href="https://www.gnupg.org/">GnuPG</a>.
+    </p>
+    <pre>$ gpg --decrypt /path/to/message</pre>
+    <p>You can find GnuPG installation instructions in the <a href="/setup">Setup Guide</a>.</p>
   </div>
+
+  <div class="control-group">
+    <h2>This is the best thing since RSA! Where can I find more information?</h2>
+    <p>Check the navbar along the top of the page or any of these fine sources:</p>
+    <ul>
+      <li><a href="https://www.gnupg.org/">GnuPG Homepage</a></li>
+    </ul>
+  </div>
+
 </div>
